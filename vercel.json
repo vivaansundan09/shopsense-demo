@@ -1,0 +1,11 @@
+{
+  "buildCommand": "PORT=4173 BASE_PATH=/ pnpm --filter @workspace/shopsense build",
+  "outputDirectory": "artifacts/shopsense/dist/public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "installCommand": "pnpm install --frozen-lockfile"
+}
